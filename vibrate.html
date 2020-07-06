@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fun </title>
+
+<style>
+
+#icon {
+display:none;
+justify-content: center;
+margin-top:40px;
+font-size:800%;
+}
+
+#ptag{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+font-size:300%;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+#cntr {
+display: flex;
+    justify-content: center;
+}
+
+button {
+border-radius: 10px;
+color:deepskyblue;
+font-size: 300%;
+ animation-name: example;
+  animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {background-color: white;}
+  to {background-color: black;}
+}
+
+</style>
+
+</head>
+<body style="background-color: dodgerblue;">
+
+<p id ="ptag" style="text-align: center;">Hey dear, whats up?</p>
+<div id='cntr'> <button  type="button" onclick="callMe()"> click </button> </div>
+<div id='icon'> &#128516; </div>
+
+
+<script>
+function callMe()
+{
+document.getElementById('ptag').innerHTML='vibration !!!!!!!!!!!!!';
+window.navigator.vibrate(3000);
+document.getElementById('icon').style.display ='flex';
+}
+</script>
+
+
+</body>
+</html>
