@@ -55,6 +55,54 @@
 // alert(ob1.age); result is undefined bcoz the property is not there in ob1 1
 // let isdeclared = "age" in ob1; 
 
+//copy of objects
+// let obj = { name: 'srikanth', age: 25 };
+// let obj2 = {}
+// for (let key in obj) {
+//     obj2[key] = obj[key];
+//     alert(obj2[key]);
+// }
+// another easy process to copy 
+// Object.assign(obj2, obj);
+
+//object methods
+// let objr = {
+//     name: 'srikanth',
+//     act() {
+//         alert('object function;')
+//     },
+//     age: 25,
+// }
+// objr.act()
+
+//constructor
+// function fun() {
+//     this.a = 1;
+//     alert('hello');
+// }
+// let oj = new fun();
+// alert(oj.a);
+
+// ?. operator
+// let user = {}
+// alert(user ?.name ?.fn);
+
+//symbol: it is used in object for unique identifier 
+let sym1 = Symbol();
+let cmp = 'name';
+let h = 'hello';
+let obj1 = {
+    [sym1]: 'srikanth',
+    [cmp]: 'Naveen',
+    hello: 1
+}
+alert(obj1[sym1]);
+alert(obj1[cmp]);
+alert(obj1[h])
+
+
+
+
 
 
 
